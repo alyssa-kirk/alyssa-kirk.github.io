@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>my work | alyssa kirk</title>
+        <style>
+
+            body {
+                margin: 20px ;
+            }
+
+            .grid_parent {
+                display: grid;
+                grid-template-columns: 3fr 1fr ;
+                grid-row-gap: 50px;
+                grid-template-areas: 
+                    "header nav"
+                    "body righthead"
+            }
+
+            .box_1 {
+                grid-area: header ;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 20px;
+                width: 250px;
+            }
+
+            .box_2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-area: nav ;
+                font-size: 12px ;
+                padding-top: 50px ;
+                padding-right: 100px;
+                font-family: Helvetica, Arial, sans-serif;
+                letter-spacing: 2px ;
+
+            }
+
+            .box_3 {
+                grid-area: body ;
+                column-count: 2;
+                margin-left: 50px;
+/*                height: 1800px;*/
+            }
+
+            .work {
+                margin-bottom: 15px;
+            }
+
+            .box_4 {
+                grid-area: righthead ;
+                writing-mode: vertical-lr;
+                font-family: Helvetica, Arial, sans-serif;
+                line-height: 75px;
+                font-size: 80px;
+                text-align: left;
+                font-weight: bolder;
+                padding-left: 20px;
+
+            }
+
+            .shared {
+                width: 100% ;
+                height: 100%;
+            }
+
+            a:link {
+                color:gray;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: gray;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:black;
+                font-weight: bold ;
+            }
+
+            p.footer {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 8pt;
+                color: #a7a7a7;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="grid_parent">
+            <div class="box_1"><img src="Images/Site-Images/signature-smallnew.png" alt="signature" width="250">
+            </div>
+            <div class="box_2 shared"> 
+
+                <a href="home-page.html">HOME</a>
+
+                <a href="work-page.html" style="color: black"><b>WORK</b></a>
+
+                <a href="about-page.html">ABOUT</a>
+
+                <a href="contact-page.html">CONTACT</a>
+            </div>
+
+            <div class="box_3">
+                <div class=work><a href="frankiejos-page.html"><img src="Images/Artwork/5.png" alt="frankie & jos" width="100%" ></a></div>
+                <div class=work><a href="bostoncalling-page.html"><img src="Images/Artwork/BC_Mockup_Reviews.jpg" alt="app mockup" width="100%" ></a></div>
+                <div class=work><a href="designisajob-page.html"><img src="Images/Artwork/designisajob-mockup.png" alt="design is a job" width="100%"></a></div><div class=work><a href="typeposter-page.html"> <img src="Images/Artwork/tyler-poster.png"  alt="tyler poster" width="100%"></a></div>
+                <div class=work><a href="magazine-page.html"> <img src="Images/Artwork/magazinespread-1small.png" alt="magazine" width="100%"></a></div>
+                <div class=work><a href="forgetfuleater-page.html"> <img src="Images/Artwork/kirk_191030.png" alt="infographic" width="100%"></a></div>
+                <div class=work><a href="recipe-page.html"><img src="Images/Artwork/Kirk2019_RecipePackage_FM_Page_1.jpg" alt="recipe" width="100%"></a></div>
+            </div>
+
+            <div class="box_4 shared"> TO MY WORK <br> WELCOME
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p class="footer">site designed by alyssa kirk</p>
+    </footer>
+</html>

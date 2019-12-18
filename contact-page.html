@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>contact me | alyssa kirk</title>
+        <style>
+
+            body {
+                margin: 20px 20px 0px 20px ;
+            }
+
+            .grid_parent {
+                display: grid;
+                grid-template-columns: 3fr 1fr ;
+                grid-row-gap: 50px;
+                grid-template-areas: 
+                    "header nav"
+            }
+
+            .box_1 {
+                grid-area: header ;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 20px;
+                width: 250px;
+            }
+
+            .box_2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-area: nav ;
+                font-size: 12px ;
+                padding-top: 50px ;
+/*                padding-right: 100px;*/
+                font-family: Helvetica, Arial, sans-serif;
+                letter-spacing: 2px ;
+            }
+
+            a:link {
+                color:gray;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: gray;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:black;
+                font-weight: bold ;
+            }
+
+            .title{
+                font-family: helvetica, arial, sans-serif;
+                font-size: 50pt;
+                font-weight: bolder;
+                text-align: center;
+                margin-top: 60px;
+                margin-bottom: -25px;
+                position: relative;
+            }
+
+            p.footer {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 8pt;
+                color: #a7a7a7;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%; 
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical
+            }
+
+            input[type=submit] {
+                background-color: #808080;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #808080;
+            }
+
+            .contact-form{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                margin: 50px 300px 50px 300px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="grid_parent">
+            <div class="box_1"><img src="Images/Site-Images/signature-smallnew.png" alt="signature" width="250">
+            </div>
+            <div class="box_2 shared"> 
+
+                <a href="home-page.html">HOME</a>
+
+                <a href="work-page.html">WORK</a>
+
+                <a href="about-page.html">ABOUT</a>
+
+                <a href="contact-page.html" style="color: black"><b>CONTACT</b></a>
+            </div>
+        </div>
+
+        <p class="title">LET'S WORK TOGETHER</p>
+
+        <div class="contact-form">
+            <form action="action_page.php">
+
+                <label for="fname"></label>
+                <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                <label for="email"></label>
+                <input type="text" id="email" name="lastname" placeholder="Email">
+
+                <label for="phone"></label>
+                <input type="text" id="phone" name="lastname" placeholder="Phone Number">
+
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </body>
+    <footer>
+        <p class="footer">site designed by alyssa kirk</p>
+    </footer>
+</html>

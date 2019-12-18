@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>design is a job redesign | alyssa kirk</title>
+        <style>
+
+            body {
+                margin: 20px ;
+                column-count: 1;
+            }
+
+            .grid_parent {
+                display: grid;
+                grid-template-columns: 3fr 1fr ;
+                grid-row-gap: 50px;
+                grid-template-areas: 
+                    "header nav"
+                    "body righthead"
+            }
+
+            .box_1 {
+                grid-area: header ;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 20px;
+                width: 250px;
+            }
+
+            .box_2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-area: nav ;
+                font-size: 12px ;
+                padding-top: 50px ;
+                padding-right: 100px;
+                font-family: Helvetica, Arial, sans-serif;
+                letter-spacing: 2px ;
+            }
+
+            .box_3 {
+                grid-area: body ;
+                column-count: 1;
+                margin-left: 50px;
+                /*                height: 1800px;*/
+            }
+
+            .work {
+                margin-top: 15px;
+                margin-bottom: 3s0px;
+                padding-left: 100px;
+                width: 300px;
+            }
+
+            .box_4 {
+                grid-area: righthead ;
+                margin-left: -200px;
+
+            }
+
+            .work_header {
+                font-family: Helvetica, Arial, sans-serif;
+                line-height: 27px;
+                font-size: 25px;
+                text-align: left;
+                font-weight: bolder;
+            }
+
+            .work_subheader {
+                font-family: Helvetica, Arial, sans-serif;
+                line-height: 23px;
+                font-size: 18px;
+                text-align: left;
+                font-weight: normal;
+            }
+
+            .worksub2 {
+                margin-top: 290px;
+            }
+
+            .worksub3 {
+                margin-top: 390px;
+            }
+
+            .worksub4 {
+                margin-top: 355px;
+                padding-bottom: 50px;
+            }
+
+            .shared {
+                width: 100% ;
+                height: 100%;
+            }
+
+            a:link {
+                color:gray;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: gray;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:black;
+                font-weight: bold ;
+            }
+
+            p.footer {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 8pt;
+                color: #a7a7a7;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="grid_parent">
+            <div class="box_1"><img src="Images/Site-Images/signature-smallnew.png" alt="signature" width="250">
+            </div>
+            <div class="box_2 shared"> 
+
+                <a href="home-page.html">HOME</a>
+
+                <a href="work-page.html" style="color: black"><b>WORK</b></a>
+
+                <a href="about-page.html">ABOUT</a>
+
+                <a href="contact-page.html">CONTACT</a>
+            </div>
+
+            <div class="box_3">
+                <div class=work><img src="Images/Artwork/designisajob-mockup.png" alt="tyler poster" width="600px"></div> <div class=work><img src="Images/Artwork/insidebook-mockup.png" alt="khalid poster" width="600px"></div>
+                <div class=work><img src="Images/Artwork/insidebook-mockup2.png" alt="killers poster" width="600px"></div>
+            </div>
+
+            <div class="box_4 shared"> <p class="work_header">Created for CDGD-230 Typography II, Massachusetts College of Art & Design</p>
+                <p class="work_subheader">A redesign of A Book Apart's <i>Design is a Job</i> by Mike Monteiro.</p><p class="work_subheader worksub2">I redesigned the entire printed work from the book jacket to the text block. I then printed and handbound the book myself to create a finished product.</p><p class="work_subheader worksub3">I used typography to create a hierarchical system that was used throughout the book. Every page was designed on the same grid to pull it all together cohesively.</p><p class="work_subheader worksub4"></p>
+            </div>
+
+        </div>
+
+    </body>
+    <footer>
+        <p class="footer">site designed by alyssa kirk</p>
+    </footer>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>about me | alyssa kirk</title>
+        <style>
+
+            body {
+                margin: 20px ;
+            }
+
+            /*GRID*/
+
+            .grid_parent {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr ;
+                grid-row-gap: 50px;
+                grid-template-areas: 
+                    "header middlehead nav"
+                    "leftbar body rightbar"
+            }
+
+            .grid_child {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr ;
+                width: 200px;
+                grid-column-gap: 30px;
+                grid-template-areas: 
+                    "photo title title"
+                    "photo description description"
+                    "photo igicon sig"
+            }
+
+            .box_1 {
+                /*                background-color:crimson ;*/
+                grid-area: header ;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 20px;
+                width: 250px;
+            }
+
+            .box_2 {
+                background-color: darkturquoise ;
+                grid-area: middlehead;
+            }
+
+            .box_3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-area: nav ;
+                font-size: 12px ;
+                padding-top: 50px ;
+/*                padding-right: 100px;*/
+                font-family: Helvetica, Arial, sans-serif;
+                letter-spacing: 2px ;
+            }
+
+            .box_4 {
+                /*                background-color: salmon;*/
+                grid-area: leftbar;
+                /*
+                writing-mode: tb-rl;
+                transform: rotate(-180deg);
+                font-family: Helvetica, Arial, sans-serif;
+                line-height: 75px;
+                font-size: 80px;
+                text-align: right;
+                font-weight: bolder;
+                padding-right: 20px;
+                */
+            }
+
+            .box_5 {
+                /*                background-color: darkorchid;*/
+                grid-area: body;
+            }
+
+            .photo {
+                grid-area: photo;
+            }
+
+            .title {
+                grid-area: title;
+                font-size: 45px ;
+                font-family: helvetica, arial ;
+                line-height: 42px ;
+                text-align: left ;
+                margin-top: -5px;
+            }
+
+            .description {
+                grid-area: description;
+                font-size: 16px;
+                line-height: 20px;
+                font-family: helvetica, arial ;
+                text-align: left ;
+                margin-left: 2px;
+                /*                margin-bottom: 45px;*/
+            }
+
+            .ig_icon {
+                grid-area: igicon;
+                margin-left: 2px;
+                width: 150px;
+                margin-top: 20px;
+            }
+
+            .signature {
+                grid-area: sig;
+                width: 150px;
+                margin-left: -20px;
+                padding-right: 20px;
+
+            }
+
+
+            .box_6 {
+                /*                background-color: fuchsia;*/
+                grid-area: rightbar;
+            }
+
+            /*LINKS*/
+
+            a:link {
+                color:gray;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: gray;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:black;
+                font-weight: bold ;
+                border-bottom: 1px solid black;
+            }
+
+            p.footer {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 8pt;
+                color: #a7a7a7;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="grid_parent">
+            <div class="box_1"><img src="Images/Site-Images/signature-smallnew.png" alt="signature" width="250">
+            </div>
+            <div class="box_3 "> 
+
+                <a href="home-page.html">HOME</a>
+
+                <a href="work-page.html">WORK</a>
+
+                <a href="about-page.html" style="color: black"><b>ABOUT</b></a>
+
+                <a href="contact-page.html">CONTACT</a>
+            </div>
+
+            <!--
+<div class="box_4 shared"> WELCOME <br> TO ME
+</div>
+-->
+
+            <div class="box_5">
+                <div class="grid_child">
+                    <div class="photo"><img src="Images/Site-Images/pfp.png" width="350"></div>
+                    <p class="title">Communication designer studying at <b>Massachusetts College of Art & Design.</b></p>
+                    <div class="description">My focus is typically <b>typography</b>, <b>print design</b>, and <b>web design</b>. However, I am always looking to expand my abilities, since the design world is constantly expanding. Currently looking for opportunities in freelance design work or internship positions for summer 2020.</div>
+                    <div class="ig_icon"><a href="https://www.instagram.com/akirkdesign/" target="_blank"><img src="Images/Site-Images/igicon.png" alt="@akirkdesign-on-instagram" width="18px"></a></div>
+                    <div class=signature><img src="Images/Site-Images/signature-small.png" width="150"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p class="footer">site designed by alyssa kirk</p>
+    </footer>
+</html>

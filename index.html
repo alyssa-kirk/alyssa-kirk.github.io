@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>alyssa kirk</title>
+        <style>
+
+            body {
+                margin: 20px 20px 0px 20px ;
+            }
+
+            .grid_parent {
+                display: grid;
+                grid-template-columns: 3fr 1fr ;
+                grid-row-gap: 50px;
+                grid-template-areas: 
+                    "header nav"
+            }
+
+            .box_1 {
+                grid-area: header ;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 20px;
+                width: 250px;
+            }
+
+            .box_2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-area: nav ;
+                font-size: 12px ;
+                padding-top: 50px ;
+                padding-right: 100px;
+                font-family: Helvetica, Arial, sans-serif;
+                letter-spacing: 2px ;
+                width: 100% ;
+                height: 100%;
+            }
+
+            .welcome {
+                font-family: helvetica, arial, sans-serif;
+                font-size: 100pt;
+                font-weight: bolder;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: -45px;
+                position: relative;
+            }
+
+            .image {
+                text-align: center;
+                /*
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+                */
+            }
+
+            a:link {
+                color:gray;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: gray;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:black;
+                font-weight: bold ;
+            }
+
+            p.footer {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 8pt;
+                color: #a7a7a7;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="grid_parent">
+            <div class="box_1"><img src="Images/Site-Images/signature-smallnew.png" alt="signature" width="250">
+            </div>
+            <div class="box_2"> 
+
+                <a href="home-page.html" style="color: black"><b>HOME</b></a>
+
+                <a href="work-page.html">WORK</a>
+
+                <a href="about-page.html">ABOUT</a>
+
+                <a href="contact-page.html">CONTACT</a>
+            </div>
+        </div>
+        <p class="welcome">WELCOME</p>
+        <div class="image"><img src="Images/Artwork/magazinespread-3.png" alt="coverimage" width="1100"></div>
+    </body>
+    <footer>
+        <p class="footer">site designed by alyssa kirk</p>
+    </footer>
+</html>
